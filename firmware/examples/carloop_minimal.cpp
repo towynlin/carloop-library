@@ -47,7 +47,7 @@ void printValuesAtInterval() {
     static const unsigned long interval = 1000;
 
     static unsigned long lastDisplay = 0;
-    if(millis() - lastDisplay < 1000)
+    if(millis() - lastDisplay < interval)
     {
         return;
     }
